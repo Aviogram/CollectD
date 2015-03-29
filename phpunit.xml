@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<phpunit bootstrap="./tests/bootstrap.php" colors="true" convertErrorsToExceptions="true"
+convertNoticesToExceptions="true" convertWarningsToExceptions="true" verbose="true" stopOnFailure="false" processIsolation="false" backupGlobals="false" syntaxCheck="true">
+    <testsuite name="CollectD Module Tests">
+        <directory>./tests/src</directory>
+    </testsuite>
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-clover" target="./tests/clover.xml"/>
+        <log type="coverage-html" target="./tests/cover-docs" yui="true" hightlight="true"/>
+    </logging>
+</phpunit>

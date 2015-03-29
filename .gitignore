@@ -1,0 +1,6 @@
+.idea
+atlassian-ide-plugin.xml
+tests/cover-docs
+tests/clover.xml
+
+/vendor/
