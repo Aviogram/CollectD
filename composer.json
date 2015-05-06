@@ -2,7 +2,8 @@
     "name": "aviogram/collectd",
     "description": "CollectD Listener for receiving information from collectd instances",
     "require": {
-        "psr/log": "1.0"
+        "psr/log": "~1.0",
+        "aviogram/common": "~0.1.0"
     },
     "license": "MIT",
     "authors": [
